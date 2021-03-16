@@ -1,0 +1,37 @@
+$boder-color :#dddddd;
+$text-size-min: 1rem;
+$text-size-nomal: 1.6rem;
+$text-size-big: 2rem;
+$hover-color:#04b2f7;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+@mixin w-h($w,$h) {
+    width: $w;
+    height: $h;
+}
+@mixin displayFlex($justify,$align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align
+  
+}
+@mixin fontSizeTitle($fontSize) {
+    font-size: $fontSize;
+    font-weight: bold;
+}
+@mixin fontSizeDescription() {
+  font-size: $text-size-min;
+  font-weight: 400;
+  color: black;
+  cursor: none;
+}

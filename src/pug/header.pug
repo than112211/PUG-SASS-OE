@@ -1,0 +1,23 @@
+- var title = ['Xuất bản','Sách','Tác giả','Xã hội','Thế giới','Kinh doanh','Công nghệ','Đời sống']
+- var avatar = 'https://s120-ava-talk.zadn.vn/f/a/b/2/3/120/5b9b95b30e5960707e8d3c96bccdfc30.jpg'
+- var logo = 'https://static-znews.zadn.vn/images/logo-zing-home.svg'
+- var link = ['http://127.0.0.1:5500/','http://127.0.0.1:5500/release.html']
+.header
+    .header__img
+        img(src= logo, alt="logo", srcset="")
+    ul.header__title
+        -for ( let i= 0 ; i< title.length ; i ++)
+            li
+                a(href= link[i])= title[i]
+            
+    .header__avatar 
+        img(src= avatar, alt="avatar", srcset="")
+    .header__menu 
+        
+            <i class="fas fa-bars"></i>
+            <ul class="dropdown-menu">     
+                -for ( let i= 0 ; i< title.length ; i ++)
+                    li
+                        a(href= link[i]).dropdown-item= title[i]
+            </ul>
+        

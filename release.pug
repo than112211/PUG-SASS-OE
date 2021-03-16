@@ -1,0 +1,33 @@
+extends ./layout.pug
+block content
+    -var release__left__img = 'https://znews-photo.zadn.vn/w480/Uploaded/qoswae/2021_03_15/1.jpeg'
+    -var release__left__title = 'Tìm hiểu tình tiết phim Bridgerton phần hai từ tiểu thuyết gốc'
+    -var release__right__img = ['https://znews-photo.zadn.vn/w480/Uploaded/oplukaa/2021_03_13/feria_internacional_libro_f_cubadebate.jpg','https://znews-photo.zadn.vn/w480/Uploaded/oplukaa/2021_03_14/tintin.jpg','https://znews-photo.zadn.vn/w480/Uploaded/piqbzcvo/2021_03_08/Xtrafondos.jpg','https://znews-photo.zadn.vn/w480/Uploaded/oplukaa/2021_03_14/thi_tham.jpg']
+    -var release__right__title = ['Ngày hội xuất bản và văn học của Cuba','Một nghệ sĩ bị kiện vì vẽ Tintin cùng phụ nữ quyến rũ',"'Jujutsu Kaisen' có thể sẽ kết thúc sau hai năm tới","Bác sĩ Nguyễn Lan Hải: 'Tình dục là một tài nguyên'"]
+    -var release__item__img = ['https://znews-photo.zadn.vn/w360/Uploaded/dqmblcvo/2021_03_09/bi_quyet_tu_cham_soc_ban_than_va_can_bang_cuoc_song.jpg','https://znews-photo.zadn.vn/w360/Uploaded/piqbzcvo/2021_03_12/Peter_Harrington.png','https://znews-photo.zadn.vn/w360/Uploaded/oplukaa/2021_03_12/001_rian_00585253hrru.jpg','https://znews-photo.zadn.vn/w360/Uploaded/qoswae/2021_03_11/karlayna.jpg','https://znews-photo.zadn.vn/w360/Uploaded/qoswae/2021_03_11/ngoi.jpg','https://znews-photo.zadn.vn/w360/Uploaded/bpcpwiq2/2021_03_12/dusza_il3_1.jpg','https://znews-photo.zadn.vn/w360/Uploaded/oplukaa/2021_03_11/18777103_303.jpg','https://znews-photo.zadn.vn/w360/Uploaded/piqbzcvo/2021_03_11/bia1_ttyk.jpg','https://znews-photo.zadn.vn/w360/Uploaded/mdf_fedrei/2021_03_08/phu_nu_1_.jpg','https://znews-photo.zadn.vn/w360/Uploaded/piqbzcvo/2021_03_08/3795791.png']
+    -var release__item__title = ["'Thầy thuốc' tốt nhất của bạn",'Mary Westmacott là bút danh của ai?','Thị trường sách thiếu nhi ở Nga sẽ tăng trưởng trong năm 2021','Nữ sinh Mỹ ra sách truyền cảm hứng cho trẻ em bị chứng khó đọc',"Độc giả hào hứng với tin phần mới của truyện '50 sắc thái' sắp ra mắt",'Sách tranh của chủ nhân giải Nobel 2018 được dịch sang tiếng Anh','Các hội sách lớn trên thế giới thay đổi kế hoạch tổ chức vì Covid-19',"'Thời kỳ hậu corona' - tìm cơ hội trong khủng hoảng",'‘Phụ nữ khuấy đảo giới kinh doanh’','Những bộ manga tiềm năng trong năm 2021']
+    -var release__item__desc = ['Mỗi người chúng ta chính là thầy thuốc tốt nhất của mình và tự chăm sóc sức khỏe cho bản thân mình là điều quan trọng nhất.','Nhà văn này được coi là nữ hoàng truyện trinh thám với hàng loạt tác phẩm kinh điển và có ảnh hưởng lớn tới xu hướng sáng tác trong nửa đầu thế kỷ 20.','Một số nhà xuất bản ở Nga dự báo sách thiếu nhi sẽ tăng trưởng trong năm 2021. Tuy nhiên, tình trạng khan hiếm bản thảo chất lượng vẫn phổ biến.','Một học sinh 15 tuổi tại Westlake, Mỹ đã ra mắt cuốn “Inspire Your Power”. Số tiền thu được từ cuốn sách sẽ hỗ trợ cho một tổ chức từ thiện địa phương.','Một phần truyện phụ trong tuyển tập “Fifty Shades” của tác giả E.L James sẽ được phát hành trong năm nay.','Tiếng Anh là ngôn ngữ thứ 22 mà "The Lost Soul", cuốn sách tranh của nhà văn Ba Lan Olga Tokarczuk và họa sĩ minh họa Joanna Concejo được chuyển ngữ.','Một số hoạt động đã phải hủy bỏ hoàn toàn, một số hội sách vẫn diễn ra trên quy mô nhỏ. Trong khi đó, các hội sách đều có những hoạt động theo hình thức trực tuyến.','Trong "Thời kỳ hậu corona", tác giả Scott Galloway không chỉ xem xét vấn đề với góc nhìn tổng quát về kinh tế - xã hội. Ông còn cho biết những gì đã, đang và sắp diễn ra.','“Phụ nữ khuấy đảo giới kinh doanh” của Sage Lavine giúp người đọc khám phá khuynh hướng tự nhiên của phái đẹp trong hợp tác kinh doanh.','Bước sang năm 2021, các bộ truyện tranh mới như "Học viện siêu anh hùng" hay "One-punch Man" vẫn nhận được sự quan tâm và đánh giá cao của người hâm mộ.']
+
+        .row.news__multimedia 
+            .media
+                h1.media__head Sách
+               
+                             
+            .col-12.col-sm-12.col-lg-6
+                +card-vertical(release__left__title,release__left__img,'big')
+
+            .col-12.col-sm-12.col-lg-6
+                .row
+                    -for (let i=0 ; i < release__right__img.length ; i++)
+                        .col-6.col-sm-6
+                            +card-vertical(release__right__title[i],release__right__img[i],'small')
+
+
+        .row.magazine
+            .media
+                h1.media__head.media__head-item Sách
+               
+            -for(let i = 0 ; i < release__item__img.length; i++)
+                .news__content-item
+                    +card-horizontal(release__item__title[i],release__item__img[i],'normal')
+                        h2= release__item__desc[i]    

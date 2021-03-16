@@ -1,0 +1,18 @@
+-var logo ='https://static-znews.zadn.vn/images/logo-zing-home.svg'
+-var footerL = ['Tạp chí điện tử Tri thức trực tuyến','Cơ quan chủ quản: Hội Xuất bản Việt Nam','Giấy phép báo chí: số 75/GP-BTTTT','© 2021 Toàn bộ bản quyền thuộc Tri thức trực tuyến'];
+-var footerR = ['Tòa soạn: Tầng 7, D29 Phạm Văn Bạch, Quận Cầu Giấy, Hà Nội','Hotline: 0931.222.666 - Email: toasoan@zing.vn','Liên hệ | Tuyển dụng | Quảng cáo'];
+
+.footer__content 
+    ul 
+        li 
+            a(href="") 
+                img(src= logo, alt="")
+        each item in footerL
+            li= item 
+                 
+        
+    ul
+        each item in footerR 
+            li= item 
+                 
+

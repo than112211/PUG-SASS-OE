@@ -1,0 +1,121 @@
+extends ./layout.pug
+block content
+    -var img__left = ['https://znews-photo.zadn.vn/w210/Uploaded/natmzz/2021_03_15/Capture1.JPG','https://znews-photo.zadn.vn/w210/Uploaded/zugttw/2021_02_24/Vac_xin.jpg','https://znews-photo.zadn.vn/w210/Uploaded/lce_qjlcv/2021_03_14/mua_xuan_PL_thumb1.jpg','https://znews-photo.zadn.vn/w210/Uploaded/opluoaa/2021_03_11/le_khanh.jpg','https://znews-photo.zadn.vn/w210/Uploaded/bpivpbbp/2021_03_14/betongthumb.jpg'] 
+    -var title__left = ['MU trở lại ngôi nhì bảng nhờ bàn phản lưới','Hai người gặp phản ứng nặng sau khi tiêm vaccine AstraZeneca','Hà Nội ấm áp, Nam Bộ nắng nóng kéo dài','NSND Lê Khanh: ‘Không thể giải cứu phim Việt như bắp cải, cà rốt’','Xử phúc thẩm nhóm giết người giấu xác trong bê tông']
+    -var img__center = 'https://znews-photo.zadn.vn/w960/Uploaded/sotntb/2021_03_14/Anh_1_cong_trinh_sai_phep.jpg'
+    -var title__center = 'Công trình nghìn tỷ giữa phố xây không phép, lãnh đạo nói không biết'
+    -var description_center = 'Lãnh đạo Bình Định nói chưa nhận được báo cáo vụ doanh nghiệp xây trung tâm thương mại dịch vụ, văn phòng và căn hộ I-Tower Quy Nhơn gần 1.800 tỷ đồng không giấy phép.'
+    -var img__right = ['https://znews-photo.zadn.vn/w480/Uploaded/zdhwqmjwq/2021_03_13/diboduoibien_1.jpg','https://znews-photo.zadn.vn/w480/Uploaded/jaegtn/2021_03_14/800.jpeg']
+    -var title__right = ['Tour lặn biển thu hút du khách ở Phú Quốc','Tham vọng của ông Biden có thể gây hại cho đảng Dân chủ']
+    -var media = ['video','longform','voices','lens','story','quizz']
+    -var media__imgLeft = 'https://znews-photo.zadn.vn/w860/Uploaded/jopluat/2021_03_14/Lee_Nguyen_vs_Quang_Ninh_1.jpg'
+    -var media__titleLeft = 'Lee Nguyễn bị chế nhạo'
+    -var media__imgRight = ['https://znews-photo.zadn.vn/w360/Uploaded/jopobun/2021_03_14/qqqq.jpg','https://znews-photo.zadn.vn/w360/Uploaded/qxwpzdjwp/2021_03_11/d89.jpg','https://znews-photo.zadn.vn/w360/Uploaded/bpivpbbp/2021_03_14/thumb.jpg','https://znews-photo.zadn.vn/w360/Uploaded/qxjwpprjv/2021_03_14/hutieumientay.jpg']
+    -var media__titleRight = ['Các điểm tham quan tại Đà Lạt đông khách trở lại','Chúng tôi mong sớm có đường gom để đi','Những ai hầu tòa cùng bà Dương Thị Bạch Diệp?','Hủ tiếu pizza miền Tây hút khách']
+    -var book__img = ['https://znews-photo.zadn.vn/w360/Uploaded/jotnhg/2021_03_14/158924639_2857201197851749_4680314820691698153_o.jpg','https://znews-photo.zadn.vn/w360/Uploaded/mdf_fedrei/2021_03_13/vi_ny_02.jpg','https://znews-photo.zadn.vn/w360/Uploaded/oplukaa/2021_03_14/150585076_10159201638249662_1987593748653681812_n.jpg','https://znews-photo.zadn.vn/w360/Uploaded/ofh_cgkztmzt/2021_03_12/thieu_nu_ben_hoa_cuc_trang.jpg','https://znews-photo.zadn.vn/w360/Uploaded/dqmblcvo/2021_03_11/writer_writing_ss_1920.jpg','https://znews-photo.zadn.vn/w360/Uploaded/yfrsy/2021_03_13/Giat_minh_con_bao_anh_yeu_em.jpg','https://znews-photo.zadn.vn/w360/Uploaded/piqbzcvo/2021_03_12/Peter_Harrington.png','https://znews-photo.zadn.vn/w360/Uploaded/jotnhg/2021_03_13/20210313_102113.jpg','https://znews-photo.zadn.vn/w360/Uploaded/mdf_fedrei/2021_03_12/dam_me_4.jpg','https://znews-photo.zadn.vn/w360/Uploaded/oplukaa/2021_03_12/bai_tri_nha.jpg','https://znews-photo.zadn.vn/w360/Uploaded/oplukaa/2021_03_12/bai_tri_nha.jpg','https://znews-photo.zadn.vn/w360/Uploaded/oplukaa/2021_03_12/bai_tri_nha.jpg']
+    -var book__title = ['Vườn hồng sển tâm tình về sách','Cơ hội nào cho nước Mỹ ?','Lý do BillGate viết sách về biến đổi khí hậu','Nhất Linh và câu chuyện chưa bao giờ cũ','Nhà văn bất đắt dĩ','Lặng im tan vào nhau','Mary là cây bút của ai','Sách của nhà toán học lỗi lạc Eculid','Chọn thứ bạn đam mê','Cách bài trí trong nhà Sài thành xưa','Cách bài trí trong nhà Sài thành xưa','Cách bài trí trong nhà Sài thành xưa'] 
+    -var content__img = ['https://znews-photo.zadn.vn/w360/Uploaded/natmzz/2021_03_15/sass.JPG','https://znews-photo.zadn.vn/w360/Uploaded/bzwvopcg/2021_03_15/kimm_1.jpeg','https://znews-photo.zadn.vn/w360/Uploaded/unvjuas/2021_03_15/jf.jpg','https://znews-photo.zadn.vn/w360/Uploaded/ayhunkt/2021_03_15/6_1.jpg','https://znews-photo.zadn.vn/w360/Uploaded/aohunkx/2021_03_09/DSC_022500.JPG','https://znews-photo.zadn.vn/w360/Uploaded/bpivpbbp/2021_03_15/betong6thumb.jpg','https://znews-photo.zadn.vn/w360/Uploaded/jaegtn/2021_03_14/Aldrin.jpg','https://znews-photo.zadn.vn/w360/Uploaded/yzizh/2021_03_15/thumb.jpg','https://znews-photo.zadn.vn/w360/Uploaded/lce_jwqqc/2021_03_15/Jose_Villarruel_1.jpg']
+    -var content__title = ['Lãnh đạo Juventus quay ngược thái độ với Ronaldo','Rich kid châu Á có thật sự giàu có như trên truyền hình?','Phía sau đường chuyền của Công Phượng cho Văn Toàn','Ngoại hình nữ ca sĩ bất ngờ nổi tiếng ở tuổi 30','Cái chết của nội y gợi cảm','Tiền không còn rẻ như trước?','Chủ mưu vụ giết người giấu xác gặp vấn đề sức khỏe, tòa hoãn xử','Phía sau tội ác của thuyền trưởng Trung Quốc giết 4 người trên biển','Chọn Toyota Camry 2.5Q hay Mercedes-Benz C 180 AMG?','Thầy giáo Mỹ được học sinh cũ tặng 27.000 USD']
+    -var content__description = ['Giám đốc thể thao Fabio Paratici tiếp tục lên tiếng về tương lai của Cristiano Ronaldo ở mùa giải tới.','Anna Shay được cho là người giàu có nhất Bling Empire với 600 triệu USD. Trong khi đó, vẫn có người thổi phồng khối tài sản thực.','Ở mùa giải 2021, Văn Toàn sẽ là người lĩnh xướng hàng công của HAGL thay vì Công Phượng như sự chờ đợi của nhiều cổ động viên.','Nam Yu Jeong và các thành viên Brave Girls đã thỏa thuận về việc tan rã trước khi ca khúc "Rollin" bất ngờ lội ngược dòng bảng xếp hạng. Cô được chú ý nhờ vẻ ngoài nóng bỏng.','Vốn là nơi khai sinh những mẫu đồ lót quyến rũ, hút mắt, ngành công nghiệp nội y tại kinh đô ánh sáng đang thay đổi để tôn vinh vẻ đẹp đa dạng của phụ nữ.','Lãi suất cho vay liên ngân hàng giảm tuần thứ 3 liên tiếp nhưng vẫn cao gấp 2-3 lần so với tháng 1. Điều này cho thấy tiền không còn rẻ như trước.','"Trong quá trình từ trại giam đến đây, Hà nghe tin bố của mình đã mất nên huyết áp tăng, tim đập nhanh, không đủ sức khỏe để tiếp tục phiên tòa", luật sư của bị cáo Hà nói.','Vụ thuyền trưởng Trung Quốc bị kết tội ra lệnh sát hại 4 người đàn ông trên Ấn Độ Dương là lời cảnh báo về tình trạng tội phạm tràn lan trên biển.','Mercedes-Benz C 180 AMG chiếm ưu thế về thiết kế và định vị thương hiệu. Trong khi đó, Toyota Camry 2.5Q có nhiều trang bị tiện nghi và chi phí sử dụng thấp hơn.','Không còn việc làm và phải sống trong xe do dịch bệnh, Jose Villarruel (77 tuổi) được các học sinh cũ gây quỹ ủng hộ tiền để trang trải cuộc sống.']
+    -var magazine__title = ['Đàn ông chúng tôi là đồng minh trong nỗ lực bình đẳng giới','Chủ nhà hàng xung phong lên đường nhập ngũ','Đội quân truy tìm Covid-19 tại TP.HCM',"TS Phan Hữu Duy Quốc: 'Metro số 1 là lý do tôi về nước sau 19 năm'","'Trong nhà như tủ lạnh', người Việt ở Texas cầu viện đồng hương","10 năm sau thảm họa kép, 'vùng đất chết' ở Nhật Bản chật vật hồi sinh","Brazil 'vỡ trận' vì biến chủng mới, toàn cầu bị đe dọa","Cuộc sống làm bố ba bé trai của John Hùng Trần"]
+    -var magazine__tag = ['voices','story','lens','longform','tl;dr','longform','tl;dr','story']
+    -var magazine__img = ['https://znews-photo.zadn.vn/w360/Uploaded/aobohun/2021_03_15/nangnongzing_13_.jpg','https://znews-photo.zadn.vn/w210/Uploaded/gtnzna/2021_03_12/thumbmetro_suco_goidam.jpg','https://znews-photo.zadn.vn/w210/Uploaded/sotntb/2021_03_14/4.jpg','https://znews-photo.zadn.vn/w210/Uploaded/yfrsy/2021_03_11/Co_don.jpg','https://znews-photo.zadn.vn/w360/Uploaded/yfrsy/2021_03_12/ky_uc.jpg','https://znews-photo.zadn.vn/w360/Uploaded/mdf_reovdl/2021_03_15/Common_Health_Issues_Basic_Surgery.jpg','https://znews-photo.zadn.vn/w360/Uploaded/chuobun/2020_07_14/xang.jpg','https://znews-photo.zadn.vn/w210/Uploaded/abhuuwo/2021_03_15/821690.jpg']
+        .row.news__head
+            .col-0.col-sm-0.col-md-0.col-lg-4.news__head--disable
+                -for ( let i = 0 ;i < img__left.length;i++)
+                    +card-horizontal(title__left[i],img__left[i],'small')
+                   
+            .col-12.col-sm-12.col-md-12.col-lg-5
+                +card-vertical(title__center,img__center,'big')
+                    h2= description_center
+
+            .col-0.col-sm-0.col-md-12.col-lg-3.news__head--flex
+                -for(let i = 0 ; i < img__right.length;i++)
+                    +card-vertical(title__right[i],img__right[i],'small')
+                
+
+        .row.news__multimedia 
+
+            .media
+                h1.media__head MULTIMEDIA
+                ul 
+                    each item in media
+                        li
+                            a(href="")= item
+                             
+            .col-12.col-sm-12.col-lg-6
+                +card-vertical(media__titleLeft,media__imgLeft,'big')
+
+            .col-12.col-sm-12.col-lg-6
+                .row
+                    -for (let i=0 ; i < media__imgRight.length ; i++)
+                        .col-6.col-sm-6
+                            +card-vertical(media__titleRight[i],media__imgRight[i],'small')
+                            
+
+        .row.book__slide 
+            .media
+                h1.media__head.media__head-item BOOK
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        .row 
+                            -for (let i=0 ; i < book__img.length/2 ; i++)
+                                .col-6.col-sm-6.col-md-4.col-lg-2
+                                    +card-vertical(book__title[i],book__img[i],'small')
+                                    
+
+                    </div>
+                    <div class="carousel-item">
+                        .row 
+                            -for (let i=6 ; i< book__img.length ; i++)
+                                .col-6.col-sm-6.col-md-4.col-lg-2
+                                    +card-vertical(book__title[i],book__img[i],'small')
+
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+        .row.news__content
+            -for(let i = 0 ; i < content__img.length; i++)
+                .news__content-item
+                    +card-horizontal(content__title[i],content__img[i],'normal')
+                        h2= content__description[i]
+    
+        .row.magazine
+            .media
+                h1.media__head.media__head-item magazine
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        .row 
+                            -for(let i =0 ; i<magazine__img.length/2;i++)
+                                .col-12.col-sm-12.col-md-6.col-lg-3
+                                    +card-magazine(magazine__title[i],magazine__img[i],magazine__tag[i])
+                                
+                                    
+                           
+                                
+                        
+                    </div>
+                    <div class="carousel-item">
+                        .row 
+                            -for(let i =magazine__img.length/2 ; i<magazine__img.length;i++)
+                                .col-12.col-sm-12.col-md-6.col-lg-3
+                                    +card-magazine(magazine__title[i],magazine__img[i],magazine__tag[i])
+                                
+                           
+                                
+                        
+                    </div>
+                
+                </div>
+                //- <button class="carousel-control-prev control-prev-outside" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+                //-     <span class="carousel-control-prev-icon icon-prev-outside" aria-hidden="true"></span>
+                //- </button>
+                //- <button class="carousel-control-next control-next-outside" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+                //-     <span class="carousel-control-next-icon icon-next-outside" aria-hidden="true"></span>
+                //- </button>
+            </div>
